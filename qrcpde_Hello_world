@@ -1,0 +1,30 @@
+# class Car:
+#     wheels = 4
+#     engine = 1
+#     color = "white"
+# niva = Car()
+# moskvich = Car()
+# volga = Car()
+#
+# niva.color = "blue"
+# moskvich.color = "red"
+#
+# print(Car)
+# print(moskvich.color)
+# print(niva.color)
+# print(volga)
+# class Airplane:
+#     seats = int(input("Введите кол-во мест\n - "))
+#     engine = int(input("Введите кол-во двигателей\n - "))
+# print(Airplane.seats)
+# print(Airplane.engine)
+
+
+import  qrcode
+
+data = "Hello, world!"
+# img = qrcode.main(data)
+qr = qrcode.QRCode(version=5, box_size=15, border=10)
+qr.add_data(data)
+img = qr.make_image()
+img.save("test.png")
