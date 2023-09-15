@@ -1,0 +1,2 @@
+# qrcode
+qrcode "Hello, world!"
